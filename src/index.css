@@ -1,0 +1,68 @@
+/* ###################### */
+/* ## BASIC CSS RESETS ## */
+/* ###################### */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    font-size: 10px;
+}
+body {
+    font-family: Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",
+                 Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",
+                 "Segoe UI Symbol"; 
+    font-weight: 400;
+    line-height: 1.4;
+    background-color: #f4f4f4;
+    padding: 2rem 1rem;             
+}
+
+/* ############ */
+/* ## HEADER ## */
+/* ############ */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 2.5rem;
+}
+.btn {
+    border: none;
+    color: #000;
+    background-color: transparent;
+    padding: 0.8rem;
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+}
+.btn a {
+    color: #000;
+}
+.github-star svg {
+    width: 1.6rem;
+    fill: transparent;
+    stroke: #222;
+    stroke-width: .1em;
+    transition: all 0.2s ease-in-out;
+}
+.btn-github:hover svg {
+    fill: gold;
+    stroke: darkgoldenrod;
+    animation: spin infinite 2s;
+}
+@keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
