@@ -66,3 +66,45 @@ body {
               transform: rotate(360deg);
     }
   }
+
+/* ############### */
+/* ## CONTAINER ## */
+/* ############### */
+
+.container {
+    margin-top: 1rem;
+}  
+
+/* ############ */
+/* ## SEARCH ## */
+/* ############ */
+
+.search {
+    max-width: 35rem;
+    margin: 0 auto;
+}
+.search-box {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+.search-box label {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+.search-box input {
+    outline: none;
+    border: 0;
+    background: none;
+    border-bottom: 1px solid #000;
+    height: 3rem;
+    font-size: 2.5rem;
+    font-family: inherit;
+    cursor: text;
+    padding: 2rem 0;
+}
+#search-city:focus {
+    border-bottom: 2px solid #9267ee;
+    transition: border-bottom 0.2s cubic-bezier(.9,.03,.69,.22);
+}
