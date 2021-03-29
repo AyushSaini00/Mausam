@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
     return ( 
         <header className="header">
             <div className="logo">
-                ☁ Mausam
+                <Link to="/">☁ Mausam</Link>
             </div>
             <div className="links">
                 <button className="btn">
-                    <a href="/about">About</a>
+                    <Link to="/about">About</Link>
                 </button>
                 <button className="btn btn-github">
                     <span className="github-star">
@@ -19,7 +21,9 @@ const Header = () => {
                         href="https://github.com/AyushSaini00/Mausam" 
                         target="_blank"
                         rel="noopener noreferrer"
-                    >Github</a>
+                    >
+                        Github
+                    </a>
                 </button>
             </div>
         </header>
