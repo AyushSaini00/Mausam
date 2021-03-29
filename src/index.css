@@ -32,6 +32,10 @@ body {
 .logo {
     font-size: 2.5rem;
 }
+.logo a {
+    text-decoration: none;
+    color: #0f0f0f;
+}
 .btn {
     border: none;
     color: #000;
@@ -90,7 +94,7 @@ body {
 }
 .search-box label {
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: rgba(0, 0, 0, 0.8);
 }
 .search-box input {
@@ -107,4 +111,73 @@ body {
 #search-city:focus {
     border-bottom: 2px solid #9267ee;
     transition: border-bottom 0.2s cubic-bezier(.9,.03,.69,.22);
+}
+
+/* ############ */
+/* ## WEATHER ## */
+/* ############ */
+
+.error-message {
+    text-align: center;
+    font-size: 2.2rem;
+    color: rgb(250, 18, 18);
+    font-weight: 600;
+}
+.loading-message {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #9267ee;
+}
+
+.place {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.time {
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.temp-and-icon {
+    display: flex;
+    justify-content: space-between;
+}
+.temperature {
+    font-size: 7rem;
+    font-family: Montserrat, sans-serif;
+    padding-top: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.feels-like {
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 1px;
+}
+.wind-and-humidity {
+    padding-top: 3.5rem;
+    margin-bottom: 2rem;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.6rem;
+}
+.wind {
+    margin-bottom: 1rem;
+}
+.icon {
+    font-size: 9rem;
+    color: #f7b519;
+    margin-top: 3rem;
+}
+.icon-sm {
+    font-size: 2rem;
+    color: #06a2df;
+    margin-right: 1rem;
+}
+.icon-sm-2 {
+    margin-right: 2rem; 
 }
